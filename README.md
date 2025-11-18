@@ -39,7 +39,7 @@ SafeStep/
 ├─ YoloDetector.py
 ├─ Config.py
 ├─ weights/
-│   └─ yolo_model.pt
+│   └─ yolov8n-human.pt
 ├─ Arduino/
 │   └─ sensor_code.ino
 ├─ bluetooth/
@@ -63,6 +63,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. YOLO 모델 파일 준비
+
 
 * `/weights` 폴더에 학습된 YOLO 모델(`.pt`) 파일을 위치시킵니다.
 
@@ -121,7 +122,7 @@ python MainApp.py
 Arduino → Raspberry Pi 간 통신 구조:
 
 * BaudRate: 9600
-* 전송 형식: `H: 54.2%, T: 23.7C, L: 120, R:0`
+* 전송 형식: `H: 54.2%, T: 23.7C, L: 120, R:848`
 * Python 측에서 Regex 파싱
 
 ---
@@ -140,7 +141,7 @@ Arduino → Raspberry Pi 간 통신 구조:
 
 ## 💽 향후 개발 계획 (TODO)
 
-* [ ] Flask/Bottle 기반 Web Dashboard 제공
+* [ ] Sensor API를 활용한 Web Dashboard 제공
 * [ ] 센서 데이터 시각화(그래프)
 * [ ] MQTT 방식 무선 통신으로 확장
 * [ ] YOLO 동작 FPS 최적화
