@@ -42,8 +42,6 @@ SafeStep/
 │   └─ yolov8n-human.pt
 ├─ Arduino/
 │   └─ sensor_code.ino
-├─ bluetooth/
-│   └─ SerialMonitor.py
 ├─ audio/
 │   ├─ in.mp3
 │   ├─ out.mp3
