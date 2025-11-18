@@ -42,7 +42,7 @@ SafeStep/
 │   └─ yolov8n-human.pt
 ├─ Arduino/
 │   └─ sensor_code.ino
-├─ audio/
+├─ static/
 │   ├─ in.mp3
 │   ├─ out.mp3
 │   ├─ rain.mp3
@@ -67,6 +67,7 @@ pip install -r requirements.txt
 
 ### 3. 아두이노 업로드
 
+* Arduino IDE에서 `DHT.h` 라이브러리를 설치합니다.
 * Arduino IDE에서 `sensor_code.ino` 파일을 Arduino MegaUno에 업로드합니다.
 
 ---
